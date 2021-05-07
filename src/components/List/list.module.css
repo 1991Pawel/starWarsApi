@@ -1,0 +1,19 @@
+.listWrapper {
+  margin: 0 auto;
+}
+
+.list {
+  padding-top: 2rem;
+  list-style: none;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(191, 211, 12);
+}
+.listItem {
+  margin-top: 1rem;
+  max-width: 500px;
+  background: rgba(209, 209, 209, 0.103);
+}
