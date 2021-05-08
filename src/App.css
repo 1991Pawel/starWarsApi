@@ -47,3 +47,25 @@ body {
 .btn-group button:hover {
   opacity: 0.5;
 }
+.btn-back {
+  display: block;
+  padding: 1rem 5rem;
+  margin: 1rem auto;
+  background: #3f2229;
+  color: #fff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+    margin-top: 7rem;
+    text-align: center;
+  }
+
+  .btn-group {
+    width: 300px;
+  }
+}

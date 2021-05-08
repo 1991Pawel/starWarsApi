@@ -18,6 +18,7 @@
   text-transform: uppercase;
   color: rgb(191, 211, 12);
 }
+
 .listItem {
   padding: 0.5rem;
   display: flex;
@@ -40,8 +41,25 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s ease-in-out opacity;
+  color: #fff;
+  text-decoration: none;
 }
 
 .cta:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .listWrapper {
+    width: 300px;
+    min-height: 300px;
+  }
+
+  .list {
+    max-width: 300px;
+  }
 }

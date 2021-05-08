@@ -3,11 +3,13 @@ import { useState, useEffect } from 'react';
 const useFetch = (url: string) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const [nextPage, setNextPage] = useState('');
   const [prevPage, setPrevPage] = useState('');
 
   useEffect(() => {
     const getDataFromApi = async () => {
+      setError(false);
       setLoading(true);
       fetch(url)
         .then((res) => {
@@ -25,12 +27,13 @@ const useFetch = (url: string) => {
         .catch((err) => {
           console.log(err.message);
           setLoading(false);
+          setError(true);
         });
     };
     getDataFromApi();
   }, [url]);
 
-  return { data, loading, nextPage, prevPage };
+  return { data, loading, nextPage, prevPage, error };
 };
 
 export default useFetch;

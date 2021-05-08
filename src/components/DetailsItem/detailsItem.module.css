@@ -1,0 +1,32 @@
+.listWrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  min-height: 400px;
+}
+
+.list {
+  padding-top: 2rem;
+  list-style: none;
+  max-width: 400px;
+  background: rgba(209, 209, 209, 0.034);
+  padding: 2rem;
+}
+.title {
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(191, 211, 12);
+}
+.listItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+
+  display: flex;
+  justify-content: space-between;
+}

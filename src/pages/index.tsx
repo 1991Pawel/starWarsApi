@@ -30,11 +30,8 @@ function HomePage() {
 
   return (
     <Layout>
-      {console.log(data)}
       <h2 className="title">StarWarsApi</h2>
-      <p>{JSON.stringify(fetchUrl)}</p>
       {data?.results && <List loading={loading} data={data.results} />}
-
       <div className="btn-group">
         <button className="btn" onClick={prevPageHandler} disabled={!prevPage}>
           prev
