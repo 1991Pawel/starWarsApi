@@ -22,3 +22,28 @@ body {
   margin-top: 10rem;
   text-align: center;
 }
+
+.btn-group {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.btn-group button {
+  padding: 1rem;
+  color: #fff;
+  background: rgb(102, 44, 56);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out opacity;
+  text-transform: uppercase;
+  width: 50%;
+}
+.btn-group button:disabled {
+  opacity: 0.1;
+}
+
+.btn-group button:hover {
+  opacity: 0.5;
+}

@@ -1,14 +1,12 @@
 import React from 'react';
-import './App.css';
-import List from './components/List/List';
-import Layout from './components/Layout/Layout';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import HomePage from './pages/index';
 
 function App() {
   return (
-    <Layout>
-      <h2 className="title">StarWarsApi</h2>
-      <List />
-    </Layout>
+    <Router>
+      <Route path="/" component={HomePage} />
+    </Router>
   );
 }
 

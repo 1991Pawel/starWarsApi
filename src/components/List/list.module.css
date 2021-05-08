@@ -1,19 +1,47 @@
 .listWrapper {
+  position: relative;
   margin: 0 auto;
+  width: 400px;
+  min-height: 400px;
 }
 
 .list {
   padding-top: 2rem;
   list-style: none;
+  max-width: 400px;
 }
 .title {
-  font-size: 2rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
   font-weight: 400;
   text-transform: uppercase;
   color: rgb(191, 211, 12);
 }
 .listItem {
-  margin-top: 1rem;
-  max-width: 500px;
-  background: rgba(209, 209, 209, 0.103);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+
+  background: rgba(209, 209, 209, 0.034);
+  display: flex;
+  justify-content: space-between;
+}
+.cta {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 300;
+  background: rgb(102, 44, 56);
+  display: inline-block;
+  padding: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease-in-out opacity;
+}
+
+.cta:hover {
+  opacity: 0.5;
 }

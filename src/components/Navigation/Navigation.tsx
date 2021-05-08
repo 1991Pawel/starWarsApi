@@ -1,23 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from '../Navigation/navigation.module.css';
 
 type LinkProps = {
-  href: string;
+  to: string;
   name: string;
 };
 
 const path = [
   {
-    name: 'characters',
-    href: '/characters',
+    name: 'people',
+    to: '/people',
   },
   {
     name: 'planets',
-    href: '/planets',
+    to: '/planets',
   },
   {
-    name: 'ships',
-    href: '/ships',
+    name: 'starships',
+    to: '/starships',
+  },
+  {
+    name: 'vehicles',
+    to: '/vehicles',
   },
 ];
 
@@ -26,9 +31,9 @@ const Navigation = () => (
     <ul className={styles.nav_menu}>
       {path.map((link: LinkProps) => (
         <li key={link.name} className={styles.nav_list}>
-          <a href={link.href} className={styles.nav_link}>
+          <Link to={link.to} className={styles.nav_link}>
             {link.name}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

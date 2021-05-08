@@ -1,30 +1,24 @@
 import React from 'react';
 import styles from '../List/list.module.css';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
-const List = () => {
+const List = ({ data, loading }: any) => {
+  if (loading) {
+    return (
+      <div className={styles.listWrapper}>
+        <LoadingSpinner />
+      </div>
+    );
+  }
   return (
     <div className={styles.listWrapper}>
       <ul className={styles.list}>
-        <li className={styles.listItem}>
-          <h5 className={styles.title}>name</h5>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </li>
-        <li className={styles.listItem}>
-          <h5 className={styles.title}>name</h5>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </li>
-        <li className={styles.listItem}>
-          <h5 className={styles.title}>name</h5>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </li>
-        <li className={styles.listItem}>
-          <h5 className={styles.title}>name</h5>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </li>
-        <li className={styles.listItem}>
-          <h5 className={styles.title}>name</h5>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </li>
+        {data.map((item: any): any => (
+          <li key={item.name} className={styles.listItem}>
+            <h5 className={styles.title}>{item.name}</h5>
+            <span className={styles.cta}>more</span>
+          </li>
+        ))}
       </ul>
     </div>
   );
