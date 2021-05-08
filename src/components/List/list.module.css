@@ -37,7 +37,7 @@
   font-weight: 300;
   background: rgb(102, 44, 56);
   display: inline-block;
-  padding: 1rem;
+  padding: 0.6rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s ease-in-out opacity;
@@ -48,7 +48,6 @@
 .cta:hover {
   opacity: 0.5;
 }
-
 @media (max-width: 600px) {
   .title {
     font-size: 1rem;
@@ -64,8 +63,6 @@
     padding-top: 1rem;
   }
   .cta {
-    font-size: 1.2rem;
-
-    text-decoration: none;
+    font-size: 1rem;
   }
 }

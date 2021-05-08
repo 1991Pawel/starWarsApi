@@ -1,7 +1,9 @@
 .wrapper {
   width: 100%;
+  min-height: 100vh;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 .stars_wrapper {
   background: rgb(0, 0, 0);
