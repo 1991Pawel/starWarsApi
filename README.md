@@ -1,5 +1,4 @@
-## Unsplash Clone
-- simple app to practice with api, react-router
+## recruitment task with swapi
 - api docs https://swapi.dev/
 
 
