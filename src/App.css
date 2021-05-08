@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  position: relative;
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -63,7 +64,7 @@ body {
 @media (max-width: 600px) {
   .title {
     font-size: 2rem;
-    margin-top: 7rem;
+    margin-top: 4rem;
     text-align: center;
   }
 
