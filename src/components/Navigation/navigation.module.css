@@ -31,3 +31,24 @@
 .nav_link:hover {
   opacity: 0.5;
 }
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 1rem;
+  }
+  .nav_menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav_list {
+    margin-right: 1rem;
+  }
+
+  .nav_link {
+    padding: 0.5rem;
+
+    font-size: 1.1rem;
+  }
+}

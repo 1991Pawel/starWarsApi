@@ -32,15 +32,27 @@ function HomePage() {
   return (
     <Layout>
       <h2 className="title">StarWarsApi</h2>
-      {data?.results && <List loading={loading} data={data.results} />}
-      <div className="btn-group">
-        <button className="btn" onClick={prevPageHandler} disabled={!prevPage}>
-          prev
-        </button>
-        <button className="btn" onClick={nextPageHandler} disabled={!nextPage}>
-          next
-        </button>
-      </div>
+      {data?.results ? (
+        <>
+          <List loading={loading} data={data.results} />
+          <div className="btn-group">
+            <button
+              className="btn"
+              onClick={prevPageHandler}
+              disabled={!prevPage}
+            >
+              prev
+            </button>
+            <button
+              className="btn"
+              onClick={nextPageHandler}
+              disabled={!nextPage}
+            >
+              next
+            </button>
+          </div>
+        </>
+      ) : null}
     </Layout>
   );
 }

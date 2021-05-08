@@ -11,10 +11,11 @@ html {
 }
 
 body {
-  overflow: hidden;
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
   color: #fff;
+  width: 100vw;
+  height: 100vh;
 }
 
 .title {
