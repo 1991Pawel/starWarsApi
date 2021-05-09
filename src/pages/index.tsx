@@ -15,7 +15,6 @@ function HomePage() {
 
   useEffect(() => {
     setFetchUrl(baseUrl + query);
-    console.log('fetch');
   }, [query, baseUrl]);
 
   const nextPageHandler = () => {
