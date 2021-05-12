@@ -17,7 +17,6 @@ const List = ({ data, loading }: any) => {
   return (
     <div className={styles.listWrapper}>
       <ul className={styles.list}>
-        {console.log(location)}
         {data.map((item: any): any => (
           <li key={item.name} className={styles.listItem}>
             <h5 className={styles.title}>{item.name}</h5>
